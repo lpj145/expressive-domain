@@ -11,7 +11,7 @@ class MonologFactory
     {
         $loggerName = $container->get('config')['logger']['name'] ?? 'default-log';
         $logger = new Logger($loggerName);
-        $logger->pushHandler(new StreamHandler(__DIR__.'/../../../data/'.$loggerName.'.log', Logger::WARNING));
+        $logger->pushHandler(new StreamHandler(__DIR__.'/../../../cache/'.$loggerName.'.log', Logger::WARNING));
         return $logger;
     }
 }

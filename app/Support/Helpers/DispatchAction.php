@@ -1,5 +1,5 @@
 <?php
-namespace App\Ship\Helpers;
+namespace ApiBase\Support\Helpers;
 
 
 use Interop\Http\ServerMiddleware\DelegateInterface;

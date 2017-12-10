@@ -1,20 +1,21 @@
 <?php
 
-use Zend\ServiceManager\Config;
+use Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory;
 use Zend\ServiceManager\ServiceManager;
 
+
 // Load configuration
-$config = require __DIR__ . '/config.php';
+$config = require 'config.php';
 
 // Build container
-$container = new ServiceManager();
-(new Config($config['dependencies']))->configureServiceManager($container);
+$container = new ServiceManager($config['dependencies']);
 
 // Inject config
 $container->setService('config', $config);
 // Abstract Factory
-$container->addAbstractFactory(new \Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory());
+$container->addAbstractFactory(new ConfigAbstractFactory());
+
 //Initialize everything Database Manager ( Laravel )
-$container->get(\Illuminate\Database\Capsule\Manager::class);
+$container->get('database');
 
 return $container;

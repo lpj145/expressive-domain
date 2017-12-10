@@ -1,12 +1,12 @@
 <?php
-namespace App\Ship\Helpers;
+namespace ApiBase\Support\Helpers;
 
-trait HashBytes
+class HashBytes
 {
     /**
      * @return string
      */
-    private function randomByte() : string
+    static public function randomByte() : string
     {
         return bin2hex(random_bytes(25));
     }

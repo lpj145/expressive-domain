@@ -11,11 +11,11 @@
     "require": {
         "php": "^7.0",
         "http-interop/http-middleware": "^0.4.1",
-        "illuminate/database": "5.5.2",
-        "illuminate/pagination": "5.5.2",
-        "jenssegers/mongodb": "3.3.1",
         "marcosadantas/authexpressive": "dev-master",
+        "marcosadantas/expressive-laravelmongodb": "dev-master",
         "marcosadantas/expressive-laravelvalidation": "dev-master",
+        "marcosadantas/expressive-migrations": "dev-master",
+        "marcosadantas/expressive-namespace": "dev-master",
         "marcosadantas/expressive-redis": "dev-master",
         "monolog/monolog": "^2.0@dev",
         "roave/security-advisories": "dev-master",
@@ -46,15 +46,25 @@
         {
             "type": "vcs",
             "url": "https://github.com/lpj145/expressive-redis"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lpj145/expressive-laravelmongodb"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lpj145/expressive-migrations"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lpj145/expressive-namespaces"
         }
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
-        },
-        "files": [
-            "functions.php"
-        ]
+            "App\\": "src/",
+            "ApiBase\\": "app/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -78,6 +88,7 @@
         "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
-        "upload-coverage": "coveralls -v"
+        "upload-coverage": "coveralls -v",
+        "app": "php bin/app"
     }
 }
