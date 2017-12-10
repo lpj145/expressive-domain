@@ -2,8 +2,8 @@
 namespace ApiBase\Units\Consumers\Console;
 
 use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
-use ApiBase\Support\Command\BaseCommand;
 use ApiBase\Support\Helpers\HashBytes;
+use ExpressiveConsole\BaseCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

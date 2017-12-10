@@ -1,11 +1,11 @@
 <?php
 namespace ApiBase\Units\Users\Providers;
 
-use ApiBase\Support\Provider\AbstractProvider;
 use ApiBase\Units\Users\Console\CreateUser;
 use ApiBase\Units\Users\Console\DeleteUser;
+use ExpressiveProvider\BaseProvider;
 
-class ConsoleServiceProvider extends AbstractProvider
+class ConsoleServiceProvider extends BaseProvider
 {
     protected function register(): void
     {

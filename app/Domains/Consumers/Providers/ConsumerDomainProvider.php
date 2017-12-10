@@ -4,9 +4,9 @@ namespace ApiBase\Domains\Consumers\Providers;
 use ApiBase\Domains\Consumers\Migration\CreateTableConsumers;
 use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
 use ApiBase\Support\Cache\Cache;
-use ApiBase\Support\Provider\AbstractProvider;
+use ExpressiveProvider\BaseProvider;
 
-class ConsumerDomainProvider extends AbstractProvider
+class ConsumerDomainProvider extends BaseProvider
 {
     protected function register(): void
     {

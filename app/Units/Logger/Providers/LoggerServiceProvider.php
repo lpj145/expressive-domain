@@ -1,11 +1,11 @@
 <?php
 namespace ApiBase\Units\Logger\Providers;
 
-use ApiBase\Support\Provider\AbstractProvider;
 use ApiBase\Units\Logger\LoggerMiddleware;
+use ExpressiveProvider\BaseProvider;
 use Monolog\Logger;
 
-class LoggerServiceProvider extends AbstractProvider
+class LoggerServiceProvider extends BaseProvider
 {
     protected function register(): void
     {

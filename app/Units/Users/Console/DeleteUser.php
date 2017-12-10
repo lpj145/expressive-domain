@@ -2,7 +2,7 @@
 namespace ApiBase\Units\Users\Console;
 
 use ApiBase\Domains\Users\Repositories\UserRepository;
-use ApiBase\Support\Command\BaseCommand;
+use ExpressiveConsole\BaseCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

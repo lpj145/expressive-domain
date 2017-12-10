@@ -2,10 +2,10 @@
 namespace ApiBase\Units\Consumers\Providers;
 
 use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
-use ApiBase\Support\Provider\AbstractProvider;
 use ApiBase\Units\Consumers\Middleware\AuthorizeConsumer;
+use ExpressiveProvider\BaseProvider;
 
-class UnitsServiceProvider extends AbstractProvider
+class UnitsServiceProvider extends BaseProvider
 {
     protected function register(): void
     {

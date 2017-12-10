@@ -34,6 +34,7 @@ $configBase = [
     \ExpressiveMigrations\ConfigProvider::class,
     AuthExpressive\ConfigProvider::class,
     ExpressiveNamespace\ConfigProvider::class,
+    ExpressiveConsole\ConfigProvider::class,
 
     // autoload files
     new ArrayProvider($cacheConfig),

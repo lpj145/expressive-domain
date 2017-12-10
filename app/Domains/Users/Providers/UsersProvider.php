@@ -1,15 +1,14 @@
 <?php
 namespace ApiBase\Domains\Users\Providers;
 
-use ApiBase\Domains\Consumers\Migration\CreateTableConsumers;
 use ApiBase\Domains\Users\Migration\CreateTableUsers;
 use ApiBase\Domains\Users\Repositories\UserRepository;
 use ApiBase\Support\Cache\Cache;
-use ApiBase\Support\Provider\AbstractProvider;
 use AuthExpressive\Interfaces\DatabaseInterface;
 use AuthExpressive\Interfaces\StorageInterface;
+use ExpressiveProvider\BaseProvider;
 
-class UsersProvider extends AbstractProvider
+class UsersProvider extends BaseProvider
 {
     protected function register(): void
     {
