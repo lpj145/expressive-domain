@@ -14,7 +14,7 @@ Redis >= 3.x
 
 ### Initializing
 
-``` git clone https://github.com/lpj145/expressive-porto . ```
+``` git clone https://github.com/lpj145/expressive-domain . ```
 
 ``` composer install ```
 ```
