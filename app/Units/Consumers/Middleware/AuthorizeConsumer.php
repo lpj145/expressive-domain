@@ -1,8 +1,8 @@
 <?php
-namespace ApiBase\Units\Consumers\Middleware;
+namespace App\Units\Consumers\Middleware;
 
-use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
-use ApiBase\Support\Response\Unauthorized;
+use App\Domains\Consumers\Repositories\ConsumerRepository;
+use App\Support\Response\Unauthorized;
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Psr\Http\Message\ResponseInterface;

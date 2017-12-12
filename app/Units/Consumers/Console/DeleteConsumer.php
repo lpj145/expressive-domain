@@ -1,7 +1,7 @@
 <?php
-namespace ApiBase\Units\Consumers\Console;
+namespace App\Units\Consumers\Console;
 
-use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
+use App\Domains\Consumers\Repositories\ConsumerRepository;
 use ExpressiveConsole\BaseCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

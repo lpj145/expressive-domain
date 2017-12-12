@@ -1,7 +1,7 @@
 <?php
-namespace ApiBase\Units\Logger\Providers;
+namespace App\Units\Logger\Providers;
 
-use ApiBase\Units\Logger\LoggerMiddleware;
+use App\Units\Logger\LoggerMiddleware;
 use ExpressiveProvider\BaseProvider;
 use Monolog\Logger;
 

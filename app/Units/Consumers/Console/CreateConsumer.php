@@ -1,8 +1,8 @@
 <?php
-namespace ApiBase\Units\Consumers\Console;
+namespace App\Units\Consumers\Console;
 
-use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
-use ApiBase\Support\Helpers\HashBytes;
+use App\Domains\Consumers\Repositories\ConsumerRepository;
+use App\Support\Helpers\HashBytes;
 use ExpressiveConsole\BaseCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

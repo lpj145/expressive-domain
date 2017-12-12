@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Support\Password;
+namespace App\Support\Password;
 
 class DefaultPassword
 {

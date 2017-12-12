@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Support\Cache;
+namespace App\Support\Cache;
 
 use AuthExpressive\Interfaces\StorageInterface;
 use Predis\Client;

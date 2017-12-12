@@ -1,8 +1,8 @@
 <?php
-namespace ApiBase\Domains\Users;
+namespace App\Domains\Users;
 
-use ApiBase\Support\Model\BaseModel;
-use ApiBase\Support\Password\DefaultPassword;
+use App\Support\Model\BaseModel;
+use App\Support\Password\DefaultPassword;
 use Jenssegers\Mongodb\Eloquent\SoftDeletes;
 
 class User extends BaseModel
@@ -15,6 +15,10 @@ class User extends BaseModel
     protected $fillable = [
         'name', 'username', 'password',
         'abilities', 'active', 'remember_token'
+    ];
+
+    protected $hidden = [
+      'remember_token', 'password'
     ];
 
 

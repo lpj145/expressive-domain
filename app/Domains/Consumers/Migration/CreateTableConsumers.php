@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Domains\Consumers\Migration;
+namespace App\Domains\Consumers\Migration;
 
 use ExpressiveMigrations\Migrations\BaseMigrations;
 use Jenssegers\Mongodb\Schema\Blueprint;

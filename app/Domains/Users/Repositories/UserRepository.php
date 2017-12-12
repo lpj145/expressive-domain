@@ -1,8 +1,8 @@
 <?php
-namespace ApiBase\Domains\Users\Repositories;
+namespace App\Domains\Users\Repositories;
 
-use ApiBase\Domains\Users\User;
-use ApiBase\Support\Repository\BaseRepository;
+use App\Domains\Users\User;
+use App\Support\Repository\BaseRepository;
 use AuthExpressive\Interfaces\DatabaseInterface;
 
 class UserRepository extends BaseRepository implements DatabaseInterface

@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Support\Model;
+namespace App\Support\Model;
 
 use Jenssegers\Mongodb\Eloquent\Model;
 

@@ -1,11 +1,11 @@
 <?php
-namespace ApiBase\Units\Consumers\Providers;
+namespace App\Units\Consumers\Providers;
 
-use ApiBase\Units\Consumers\Console\CreateConsumer;
-use ApiBase\Units\Consumers\Console\DeleteConsumer;
+use App\Units\Consumers\Console\CreateConsumer;
+use App\Units\Consumers\Console\DeleteConsumer;
 use ExpressiveProvider\BaseProvider;
 
-class ConsoleServiceProvider extends BaseProvider
+class ConsoleProvider extends BaseProvider
 {
     protected function register(): void
     {
@@ -15,5 +15,4 @@ class ConsoleServiceProvider extends BaseProvider
             'consumer:delete' => DeleteConsumer::class,
         ]);
     }
-
 }

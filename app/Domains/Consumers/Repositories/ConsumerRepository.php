@@ -1,9 +1,9 @@
 <?php
-namespace ApiBase\Domains\Consumers\Repositories;
+namespace App\Domains\Consumers\Repositories;
 
-use ApiBase\Support\Cache\Cache;
-use ApiBase\Support\Repository\BaseRepository;
-use ApiBase\Domains\Consumers\Consumer;
+use App\Support\Cache\Cache;
+use App\Support\Repository\BaseRepository;
+use App\Domains\Consumers\Consumer;
 
 class ConsumerRepository extends BaseRepository
 {

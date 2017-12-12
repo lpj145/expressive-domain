@@ -1,12 +1,12 @@
 <?php
-namespace ApiBase\Domains\Consumers\Providers;
+namespace App\Domains\Consumers\Providers;
 
-use ApiBase\Domains\Consumers\Migration\CreateTableConsumers;
-use ApiBase\Domains\Consumers\Repositories\ConsumerRepository;
-use ApiBase\Support\Cache\Cache;
+use App\Domains\Consumers\Migration\CreateTableConsumers;
+use App\Domains\Consumers\Repositories\ConsumerRepository;
+use App\Support\Cache\Cache;
 use ExpressiveProvider\BaseProvider;
 
-class ConsumerDomainProvider extends BaseProvider
+class DomainProvider extends BaseProvider
 {
     protected function register(): void
     {

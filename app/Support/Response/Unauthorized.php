@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Support\Response;
+namespace App\Support\Response;
 
 use Zend\Diactoros\Response\TextResponse;
 

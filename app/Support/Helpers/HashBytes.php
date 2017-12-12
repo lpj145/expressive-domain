@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Support\Helpers;
+namespace App\Support\Helpers;
 
 class HashBytes
 {

@@ -1,7 +1,7 @@
 <?php
-namespace ApiBase\Domains\Consumers;
+namespace App\Domains\Consumers;
 
-use ApiBase\Support\Model\BaseModel;
+use App\Support\Model\BaseModel;
 
 class Consumer extends BaseModel
 {

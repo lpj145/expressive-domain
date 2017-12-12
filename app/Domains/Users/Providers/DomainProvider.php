@@ -1,14 +1,14 @@
 <?php
-namespace ApiBase\Domains\Users\Providers;
+namespace App\Domains\Users\Providers;
 
-use ApiBase\Domains\Users\Migration\CreateTableUsers;
-use ApiBase\Domains\Users\Repositories\UserRepository;
-use ApiBase\Support\Cache\Cache;
+use App\Domains\Users\Migration\CreateTableUsers;
+use App\Domains\Users\Repositories\UserRepository;
+use App\Support\Cache\Cache;
 use AuthExpressive\Interfaces\DatabaseInterface;
 use AuthExpressive\Interfaces\StorageInterface;
 use ExpressiveProvider\BaseProvider;
 
-class UsersProvider extends BaseProvider
+class DomainProvider extends BaseProvider
 {
     protected function register(): void
     {
@@ -16,7 +16,7 @@ class UsersProvider extends BaseProvider
         $this->config('migrations', [
             CreateTableUsers::class
         ]);
-        
+
         //Factories
 
         //Invokables

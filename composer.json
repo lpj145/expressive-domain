@@ -60,7 +60,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "ApiBase\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

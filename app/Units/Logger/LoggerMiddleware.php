@@ -1,7 +1,7 @@
 <?php
-namespace ApiBase\Units\Logger;
+namespace App\Units\Logger;
 
-use ApiBase\Support\Response\Error;
+use App\Support\Response\Error;
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Monolog\Logger;

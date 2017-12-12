@@ -1,5 +1,5 @@
 <?php
-namespace ApiBase\Support\Cache;
+namespace App\Support\Cache;
 
 use Predis\Client;
 use Psr\Container\ContainerInterface;

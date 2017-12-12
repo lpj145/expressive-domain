@@ -52,7 +52,7 @@ return [
     'zend-expressive' => [
         // Enable programmatic pipeline: Any `middleware_pipeline` or `routes`
         // configuration will be ignored when creating the `Application` instance.
-        'programmatic_pipeline' => true,
+        'programmatic_pipeline' => false,
 
         // Provide templates for the error handling middleware to use when
         // generating responses.

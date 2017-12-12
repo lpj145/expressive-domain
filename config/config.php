@@ -14,17 +14,13 @@ $cacheConfig = [
 $configBase = [
 
     // Domains Providers
-    \ApiBase\Domains\Users\Providers\UsersProvider::class,
-    \ApiBase\Domains\Consumers\Providers\ConsumerDomainProvider::class,
-
-    // Support Providers
-    \ApiBase\Support\SupportServiceProvider::class,
+    \App\Domains\Users\Providers\DomainProvider::class,
+    \App\Domains\Consumers\Providers\DomainProvider::class,
 
     //Units Providers
-    \ApiBase\Units\Consumers\Providers\UnitsServiceProvider::class,
-    \ApiBase\Units\Consumers\Providers\ConsoleServiceProvider::class,
-    \ApiBase\Units\Logger\Providers\LoggerServiceProvider::class,
-    \ApiBase\Units\Users\Providers\ConsoleServiceProvider::class,
+    \App\Units\Consumers\Providers\UnitsProvider::class,
+    \App\Units\Users\Providers\UnitsProvider::class,
+    \App\Units\Logger\Providers\LoggerServiceProvider::class,
 
 
     //Expressive packages/libs providers
@@ -38,7 +34,7 @@ $configBase = [
 
     // autoload files
     new ArrayProvider($cacheConfig),
-//    new PhpFileProvider('config/autoload/{{,*.}global,{,*.}local}.php'),
+    new PhpFileProvider('config/autoload/{{,*.}global,{,*.}local}.php'),
     new PhpFileProvider('config/autoload/app-config.local.php'),
     new PhpFileProvider('config/autoload/zend-expressive.global.php'),
     new PhpFileProvider('config/development.config.php'),
