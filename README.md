@@ -1,5 +1,5 @@
 # expressive-porto
-This skeleton with Porto Pattern
+This skeleton with Domain Pattern
 
 
 ### About
