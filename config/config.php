@@ -21,6 +21,7 @@ $configBase = [
     \App\Units\Consumers\Providers\UnitsProvider::class,
     \App\Units\Users\Providers\UnitsProvider::class,
     \App\Units\Logger\Providers\LoggerServiceProvider::class,
+    \App\Units\Nfe\Providers\UnitsProvider::class,
 
 
     //Expressive packages/libs providers

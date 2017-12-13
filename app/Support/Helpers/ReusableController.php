@@ -1,17 +1,17 @@
 <?php
 namespace App\Support\Helpers;
 
-
 use Interop\Http\ServerMiddleware\DelegateInterface;
+use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-/**
- * Trait DispatchAction
- * @package App\Ship\Helpers
- * @property array $mapMethods
- */
-trait DispatchAction
+abstract class ReusableController implements MiddlewareInterface
 {
+    /**
+     * @var array
+     */
+    protected $mapMethods = [];
+
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
         $dictionary = [
@@ -21,7 +21,7 @@ trait DispatchAction
             'DELETE' => 'delete'
         ];
 
-        if (property_exists($this, 'mapMethods')) {
+        if (is_array($this->mapMethods)) {
             $dictionary = array_merge($dictionary, $this->mapMethods);
         }
 

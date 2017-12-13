@@ -39,10 +39,9 @@ $app->pipe(ImplicitHeadMiddleware::class);
 $app->pipe(ImplicitOptionsMiddleware::class);
 $app->pipe(UrlHelperMiddleware::class);
 
-$app->pipe(\AuthExpressive\Middleware\JwtMiddleware::class);
-$app->pipe(\AuthExpressive\Middleware\MeMiddleware::class);
+$app->pipe(\Zend\Expressive\Helper\BodyParams\BodyParamsMiddleware::class);
 // If you needed api public keys authorization, active uncomment this middleware!
-//$app->pipe(\App\Containers\Consumers\Middlewares\AuthorizeConsumer::class);
+$app->pipe(\App\Units\Consumers\Middleware\AuthorizeConsumer::class);
 
 // Add more middleware here that needs to introspect the routing results; this
 // might include:
